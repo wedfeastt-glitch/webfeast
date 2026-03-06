@@ -38,7 +38,7 @@ Email: ${formData.email}
 
 Please share quotation.`;
 
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/918220136305?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
