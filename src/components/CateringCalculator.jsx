@@ -4,66 +4,81 @@ import './CateringCalculator.css';
 
 const MENU_SECTIONS = [
   {
-    id: 'rice',
-    label: '🍚 Veg Rice Items',
-    items: ['Plain Rice', 'Jeera Rice', 'Veg Biryani', 'Lemon Rice', 'Tomato Rice', 'Curd Rice', 'Peas Pulao', 'Coconut Rice'],
+    id: 'welcome_drinks',
+    label: '🍹 Welcome Drinks / Juices',
+    items: ['Grape Juice', 'Watermelon Juice', 'Fruit Punch', 'Fresh Juice (3 varieties)', 'Mocktail Juice', 'Rooh Afza'],
   },
   {
-    id: 'tiffin',
-    label: '🥞 Tiffin Items',
-    items: ['Idli', 'Dosa', 'Pongal', 'Upma', 'Vada', 'Poori', 'Chapati', 'Rava Dosa', 'Pesarattu'],
+    id: 'soups',
+    label: '🥣 Soups',
+    items: ['Vegetable Soup', 'Sweet Corn Soup', 'Tomato Soup', 'Mushroom Soup', 'Baby Corn Soup'],
   },
   {
-    id: 'roti',
-    label: '🫓 Roti / Bread Items',
-    items: ['Chapati', 'Parotta', 'Naan', 'Puri', 'Phulka', 'Stuffed Paratha'],
+    id: 'starters_veg',
+    label: '🍢 Starters (Veg)',
+    items: ['Veg Spring Roll', 'Paneer Tikka', 'Paneer Kabab', 'Cutlet', 'French Fries', 'Chilly Gobi', 'Cashew Pakoda', 'Ladies Finger Pakoda', 'Mini Idly', 'Mini Dosa', 'Butter Chilli', 'Stuffed Chapathi'],
   },
   {
-    id: 'curries',
-    label: '🥘 Veg Curries & Gravies',
-    items: ['Dal Tadka', 'Paneer Butter Masala', 'Chana Masala', 'Aloo Gobi', 'Mixed Veg Curry', 'Sambar', 'Rasam', 'Kootu'],
+    id: 'starters_nonveg',
+    label: '🍗 Starters (Non-Veg)',
+    items: ['Chicken 65', 'Chilli Chicken', 'Chicken Fry', 'Chicken Tandoori', 'Prawn Fry', 'Prawn Masala', 'Fish Fry (Vanjaram Fish)', 'Chicken Dry', 'Beef Dry / Beef Ularthu'],
   },
   {
-    id: 'starters',
-    label: '🥗 Veg Starters',
-    items: ['Gobi 65', 'Paneer Tikka', 'Veg Cutlet', 'Spring Rolls', 'Mushroom Pepper Fry', 'Baby Corn Fry'],
+    id: 'curries_veg',
+    label: '🍛 Main Course – Veg Curries',
+    items: ['Paneer Butter Masala', 'Palak Paneer', 'Veg Kurma', 'Aloo Mutter', 'Mushroom Pepper Masala', 'Dal Makhani', 'Veg Chettinad', 'Kadai Paneer', 'Brinjal Gravy', 'Beans Punjab Curry', 'Cauliflower 65', 'Vegetable Manchurian'],
   },
   {
-    id: 'nonveg_rice',
-    label: '🍗 Non-Veg Rice Items',
-    items: ['Chicken Biryani', 'Mutton Biryani', 'Egg Biryani', 'Fish Biryani', 'Prawn Biryani'],
+    id: 'curries_nonveg',
+    label: '🍗 Main Course – Non-Veg Curries',
+    items: ['Chettinad Chicken', 'Naadan Chicken Curry', 'Mutton Sukka', 'Mutton Boti', 'Mutton Varutharacha Curry', 'Chicken Chettinad', 'Prawns Masala'],
   },
   {
-    id: 'nonveg_curries',
-    label: '🍖 Non-Veg Curries',
-    items: ['Chicken Curry', 'Mutton Curry', 'Egg Curry', 'Fish Curry', 'Prawn Masala', 'Chicken Chettinad'],
+    id: 'rice_biriyani',
+    label: '🍚 Rice & Biriyani Items',
+    items: ['Veg Dum Biriyani', 'Mushroom Biriyani', 'Chicken Biriyani', 'Mutton Biriyani', 'Hyderabad Biriyani', 'Bisibele Bath', 'Ghee Rice', 'Veg Pulao', 'Fried Rice', 'White Rice', 'Sambar Rice', 'Curd Rice', 'Aval Thayir Sadam', 'Curry Leaves Rice'],
   },
   {
-    id: 'nonveg_starters',
-    label: '🔥 Non-Veg Starters',
-    items: ['Chicken 65', 'Chicken Lollipop', 'Mutton Chukka', 'Fish Fry', 'Prawn Fry', 'Egg Pepper Fry'],
+    id: 'breads',
+    label: '🫓 Breads / Tiffin Items',
+    items: ['Rumali Roti', 'Chapathi', 'Parotta / Kerala Paratha', 'Phulka', 'Appam', 'Idiyappam', 'Pathiri', 'Dosa (Ghee, Masala, Onion, Oothappam, Kalakki)', 'Onion Podi Uttapam'],
   },
   {
-    id: 'drinks',
-    label: '🥤 Drinks & Beverages',
-    items: ['Buttermilk', 'Lemon Juice', 'Tender Coconut', 'Fruit Juice', 'Soft Drinks', 'Lassi', 'Badam Milk', 'Filter Coffee', 'Tea'],
+    id: 'sadhya',
+    label: '🥗 Sadhya / Traditional Veg Items',
+    items: ['Sambar', 'Rasam', 'Moru', 'Kalan', 'Olan', 'Aviyal', 'Koottu Curry', 'Pineapple Pachadi', 'Thoran', 'Ghee Parippu', 'Pulinchi', 'Poriyal', 'Varavu (2 types)'],
+  },
+  {
+    id: 'sides',
+    label: '🥒 Side Dishes / Accompaniments',
+    items: ['Onion Raitha', 'Salad', 'Pickle (Mango Pickle, More Milagai)', 'Appalam / Pappadam', 'Javvarasi Vadam', 'Potato Chips', 'Senai Chips', 'Urulai Pirai', 'Banana Leaf'],
   },
   {
     id: 'desserts',
-    label: '🍮 Sweets & Desserts',
-    items: ['Gulab Jamun', 'Rasgulla', 'Kheer', 'Halwa', 'Payasam', 'Ice Cream', 'Jalebi', 'Ladoo'],
+    label: '🍰 Desserts / Sweets',
+    items: ['Rasmalai', 'Bread Halwa', 'Badam Halwa', 'Carrot Halwa', 'Anarkali Sweet', 'Dry Jamun / Jamun Malai', 'Rasgulla', 'Jalebi', 'Ilaneer Payasam', 'Palada Payasam', 'Payasam', 'Badam Kajak / Kajukatli', 'Fruit Salad', 'Ice Cream', 'Ice Cream with Pudding', 'Badam with Ice Cream'],
   },
   {
-    id: 'extras',
-    label: '🥙 Extras & Sides',
-    items: ['Papad', 'Pickle', 'Raita', 'Salad', 'Chutney', 'Appalam', 'Vadagam'],
+    id: 'stalls',
+    label: '🧃 Stalls / Extras',
+    items: ['Pani Poori', 'Bhel Poori', 'Samosa', 'Popcorn', 'Sweet Candy', 'Sweet Beeda', 'Panjumittai'],
+  },
+  {
+    id: 'beverages',
+    label: '☕ Beverages',
+    items: ['Tea', 'Coffee', 'Water Bottle / Mineral Water'],
+  },
+  {
+    id: 'service',
+    label: '👨‍🍳 Service Items',
+    items: ['Service Boys', 'Supervisor', 'Welcome Girls'],
   },
 ];
 
 const CateringCalculator = () => {
   const [guests, setGuests] = useState(100);
   const [selected, setSelected] = useState({});
-  const [openSections, setOpenSections] = useState({ rice: true });
+  const [openSections, setOpenSections] = useState({ welcome_drinks: true });
 
   const toggle = (sectionId, item) => {
     setSelected(prev => {
