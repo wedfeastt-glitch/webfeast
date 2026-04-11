@@ -3,6 +3,7 @@ import ServiceCard from '../components/ServiceCard';
 import PackageCard from '../components/PackageCard';
 import CateringCalculator from '../components/CateringCalculator';
 import AddonSection from '../components/AddonSection';
+import KeralaMenu from '../components/KeralaMenu';
 import BookingForm from '../components/BookingForm';
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
@@ -52,13 +53,19 @@ const Home = () => {
         <Wave fill="#3b0015" />
       </section>
 
-      {/* bg: #3b0015 → next: #1a0008 */}
+      {/* bg: #3b0015 → next: #2d0010 (kerala menu) */}
       <section className="calculator-section section">
         <div className="container">
           <CateringCalculator />
         </div>
-        <Wave fill="#1a0008" />
+        <Wave fill="#2d0010" />
       </section>
+
+      {/* Kerala Special Menus */}
+      <div className="kerala-menu-wrapper">
+        <KeralaMenu />
+        <Wave fill="#1a0008" />
+      </div>
 
       {/* bg: #1a0008 → next: #4a1020 (stats) */}
       <section className="addons-section section">
