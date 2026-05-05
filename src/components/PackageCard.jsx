@@ -5,7 +5,7 @@ import './PackageCard.css';
 const PackageCard = ({ pkg, index }) => {
   const handleWhatsApp = () => {
     const message = `Hello, I want to inquire about the ${pkg.name} (₹${pkg.price.toLocaleString('en-IN')})`;
-    window.open(`https://wa.me/918220136305?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/917094281993?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (

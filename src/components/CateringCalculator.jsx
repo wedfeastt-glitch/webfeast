@@ -124,7 +124,7 @@ const CateringCalculator = () => {
       lines.push('\n_(No items selected yet)_');
     }
     const msg = encodeURIComponent(lines.join('\n'));
-    window.open(`https://wa.me/918220136305?text=${msg}`, '_blank');
+    window.open(`https://wa.me/917094281993?text=${msg}`, '_blank');
   };
 
   return (

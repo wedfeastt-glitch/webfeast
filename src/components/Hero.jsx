@@ -22,7 +22,7 @@ const Hero = () => {
   }, []);
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/918220136305?text=Hello, I want to inquire about your event services', '_blank');
+    window.open('https://wa.me/917094281993?text=Hello, I want to inquire about your event services', '_blank');
   };
 
   return (

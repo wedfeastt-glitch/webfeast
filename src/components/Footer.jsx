@@ -14,7 +14,7 @@ const Footer = () => {
             <p>Creating unforgettable celebrations with elegance and perfection.</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
-              <a href="https://instagram.com/syven_wedding_planners" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={20} /></a>
+              <a href="https://www.instagram.com/weadfeasteventplanners?igsh=MTJjb3RkYjNiaWMzMg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={20} /></a>
               <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
             <ul className="contact-info">
               <li>
                 <Phone size={18} />
-                <a href="tel:+918220136305">+91 82201 36305</a>
+                <a href="tel:+917094281993">+91 70942 81993</a>
               </li>
               <li>
                 <Mail size={18} />

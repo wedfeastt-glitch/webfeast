@@ -16,7 +16,7 @@ const KeralaMenu = () => {
       lines.push('');
     });
     const msg = encodeURIComponent(lines.join('\n'));
-    window.open(`https://wa.me/918220136305?text=${msg}`, '_blank');
+    window.open(`https://wa.me/917094281993?text=${msg}`, '_blank');
   };
 
   return (

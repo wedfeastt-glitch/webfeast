@@ -80,7 +80,7 @@ const Navbar = () => {
                 </ol>
               )}
               <a
-                href="https://wa.me/918220136305?text=Hello, I want to book an event with Wed Feast!"
+                href="https://wa.me/917094281993?text=Hello, I want to book an event with Wed Feast!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="book-now-btn"
@@ -92,9 +92,9 @@ const Navbar = () => {
             </div>
           </div>
 
-          <a href="tel:+918220136305" className="nav-phone">
+          <a href="tel:+917094281993" className="nav-phone">
             <Phone size={20} />
-            <span>+91 82201 36305</span>
+            <span>+91 70942 81993</span>
           </a>
 
           <button ref={toggleRef} className="mobile-toggle" onClick={() => setMobileMenu(!mobileMenu)}>

@@ -22,7 +22,7 @@ const ServiceDetails = () => {
 
   const handleWhatsApp = () => {
     const message = `Hello, I want to inquire about ${service.title} service`;
-    window.open(`https://wa.me/918220136305?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/917094281993?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
